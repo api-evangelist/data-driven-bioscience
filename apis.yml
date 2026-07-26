@@ -1,8 +1,25 @@
 aid: data-driven-bioscience
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/data-driven-bioscience.png
 name: Data Driven Bioscience
-description: 'Data Driven Bioscience is a company surfaced as a portfolio company of initialized-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Data Driven Bioscience (now operating as Duoseq, a ddb.bio service) is a cancer genomics
+  testing company that performs comprehensive molecular profiling of both DNA and RNA from a single
+  sample in an on-site workflow, delivering results from sample to report in roughly two days. Its
+  platform detects mutations, expression levels, gene fusions, and clonotype information, and integrates
+  directly with Epic and other leading EHR systems so results flow into the patient chart. The company
+  is a portfolio company of initialized-capital and was added to the API Evangelist network as a stub
+  for enrichment; as of this pass it publishes a marketing/clinical website but no public developer or
+  API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/data-driven-bioscience/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Genomics
+- Oncology
+- Diagnostics
+- Life Sciences
+- Bioinformatics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/data-driven-bioscience-domain-security.yml
 - type: Website
   url: https://datadrivenbioscience.com/
+- type: Website
+  url: https://duoseq.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
